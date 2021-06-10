@@ -1,85 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Nightmaretown 2.0</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Nightmaretown 2.0</title>
+
+  <script src=".\js\tales.js"></script>
+  <script type="text/javascript">
+    function showNav() {
+      var x = document.getElementById('dropdown-content');
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    } 
+  </script>
 </head>
+
 <body>
-    <header>
-        <h1>Nightmare Town</h1>
-        <nav></nav>
-    </header>
-    <main>
-        <section id="s1">
-            <h2>Title 1</h2>
-            <p id="s1-space">"I'm baby farm-to-table humblebrag id leggings portland. 
-                Fanny pack listicle occaecat church-key, brooklyn retro 
-                cornhole hoodie taxidermy direct trade ipsum lorem 
-                sustainable eu. Occupy af 3 wolf moon +1 hammock blue 
-                bottle ad affogato irure tumblr food truck vaporware 
-                lomo art party. Ipsum master cleanse fam poke kitsch 
-                gochujang. Pitchfork fashion axe nulla distillery 
-                tumeric iceland, kale chips brunch thundercats ea retro 
-                aesthetic chillwave cornhole veniam. Locavore waistcoat 
-                dolor copper mug umami brunch chambray et shoreditch."
-            </p>
-            <div class="bottom-border" id="purple-bottom">
-                <img src="./images/purple bottom.png" alt="" class="bottom-border">
-            </div>
-        </section>
-        <section id="s2">
-            <h2>Title 2</h2>
-            <textarea name="box" id="" cols="30" rows="10">
-                Try-hard cardigan tattooed, pork belly put a bird on it flexitarian microdosing. Letterpress paleo taxidermy, synth lo-fi stumptown farm-to-table tousled cray dreamcatcher la croix authentic. Sriracha umami wolf crucifix truffaut food truck jianbing. Pitchfork marfa pickled brooklyn taxidermy. Cold-pressed freegan austin, put a bird on it williamsburg mustache banh mi try-hard irony. Viral retro iceland, vexillologist yr artisan stumptown.
+  <header>
+    <img src="./images/title-bg.png" alt="" id="title-bg">
+    <h1>Nightmare Town</h1>
+    <!-- <div>
+      <a href="/pages/geocities.html" title="༼ つ ◕_◕ ༽つ < Dont click!)">
+        <h2 class="subtitle">Whimsically Creepy</h2>
+      </a>
+    </div> -->
+    <nav class='desktop-nav'>
+      <a href="index.html">Home</a> |
+      <a href="./pages/about.html">About</a> |
+      <a href="./pages/podcast.html">Podcast</a> |
+      <a href="./pages/submit-story.html">Submit</a> |
+      <a href="./pages/merch.html">Merch</a>
+    </nav>
+  </header>
+  <main>
+    <section id="s1">
+      <h2 id="hello">Hello Neighbor!</h2>
+      <!-- <p id="s1-space">"I'm baby farm-to-table humblebrag id leggings portland.
+        Fanny pack listicle occaecat church-key, brooklyn retro
+        cornhole hoodie taxidermy direct trade ipsum lorem
+        sustainable eu. Occupy af 3 wolf moon +1 hammock blue
+        bottle ad affogato irure tumblr food truck vaporware
+        lomo art party. Ipsum master cleanse fam poke kitsch
+        gochujang. Pitchfork fashion axe nulla distillery
+        tumeric iceland, kale chips brunch thundercats ea retro
+        aesthetic chillwave cornhole veniam. Locavore waistcoat
+        dolor copper mug umami brunch chambray et shoreditch."
+      </p> -->
+      <p id="s1-space">
+        Hi there! We are your hosts, Betty Boom and Mandamonium. We would like
+        to welcome you to NightmareTown, a whimsically creepy podcast where each
+        episode we read stories based around a topic that we draw out of a hat.
+        The stories we tell or topics we talk about range from true crime to
+        creepy pastas, paranormal, to horrifying history. It’s different every
+        week, but always chilling. Become a neighbor and join us for some truly
+        scary stories.
+      </p>
+      <div id="about-us">
+        <div class="manda">
+          <h2>Manda Monium</h2>
+          <div class='about-her'>
+            <img src="../images/manda.jpg" class="manda-img">
+            <p class='manda-text'>"Hi there! My name is Mandamonium I'm the co-host of Nightmare town! An avid hiker, I
+              love being out in the woods, even if otherworldly things may inhabit them.
+              I'm a natural-born geek, and I also love to create anything and everything! One of my favorite creepypasta
+              is "The Rake”, and my favorite video game is "The Witcher 3". Well, that's about all I can tell you about
+              me in a small little blurb! Until next time..."</p>
+          </div>
+        </div>
 
-Vaporware lomo brunch, plaid ugh ethical typewriter enamel pin fixie synth man bun twee gochujang. Bushwick enamel pin neutra trust fund disrupt yr kale chips cloud bread gentrify banjo ethical. Irony kogi hell of, helvetica next level chambray organic mustache portland distillery shabby chic semiotics pop-up. Tousled dreamcatcher stumptown, 90's kinfolk four loko enamel pin. XOXO narwhal raw denim hoodie unicorn letterpress umami kinfolk pok pok. Shabby chic gluten-free pop-up, lo-fi normcore tbh cronut yr hella sartorial narwhal put a bird on it coloring book. Unicorn artisan sustainable, everyday carry mumblecore meggings blue bottle letterpress.
+        <div class='betty'>
+          <h2>Betty Boom</h2>
+          <div class='about-me'>
+            <img src="../images/betty.jpg" class="betty-img">
+            <p class="betty-text">"Hello Neighbors! Betty Boom here, the <strong>brain mama</strong> and other co-host
+              of NightmareTown! I'm obsessed with True Crime, Aliens, and most things that go bump in the night. I love
+              telling spooky stories and hearing about other's experiences as well. So tell us a story!"</p>
+          </div>
+        </div>
+        <div class="bottom-border" id="purple-bottom">
+          <img src="./images/nightmare-card-light.png" alt="" class="bottom-border">
+        </div>
+    </section>
+    <section id="s2">
+      <h2 id="tales">Tales From Neighborhood Watch</h2>
+      <div class="quote-story">
+        <img id="open-quote"
+          src="https://cdn3.iconfinder.com/data/icons/smoothfill-content/30/content_041-open_quote-text-type-editor-512.png"
+          alt="open-quote">
+        <p id='story'></p>
+        <img id="close-quote"
+          src="https://cdn3.iconfinder.com/data/icons/smoothfill-content/30/content_040-close_quote-text-type-editor-512.png"
+          alt="close-quote">
+      </div>
+      </div>
 
-Dummy text? More like dummy thicc text, amirite?
-            </textarea>
-        </section>
-            <section id="s3">
-                <h2>Title 3</h2>
-                <div>
-                    <table>
-                        <ol><p>Merch 1</p></ol>
-                        <ol><p>Merch 2</p></ol>
-                        <ol><p>Merch 3</p></ol>
-                    </table>
-                </div>
-                <div class="bottom-border">
-                    <img src="./images/s3 bottom.png" alt="" class="bottom-border">
-                </div>
-        </section>
-    </main>
-    <footer>
-        <figure class="edit-by">
-          <img src="./images/swiff.jpg" width="50px" height="50px">
-          <span>Edited by <a href="https://github.com/swifferwarrior">SwifferWarrior</a> © 2020 </span>
-        </figure>
-    
-        <figure class='social-media'>
-          <a href="mailto: nightmaretown18@gmail.com" title="Email">
-            <img src="./images/email.png">
-          </a>
-    
-          <a href="https://www.facebook.com/nightmaretown18/" title="Facebook">
-            <img src='./images/facebook.png'>
-          </a>
-    
-          <a href="https://www.instagram.com/nightmaretown18/" title="Instagram">
-            <img src='./images/instagram.png'>
-          </a>
-    
-          <a href="https://twitter.com/nightmaretown18" title="Twitter">
-            <img src='./images/twitter.png'>
-          </a>
-    
-          <a href="https://www.youtube.com/channel/UC-Tx0f_-SNZr7ADqVE3vbJA" title="YouChoob">
-            <img src='images/youtube.png'>
-          </a>
-        </figure>
-      </footer>
+      <!-- <textarea name="box" id="" cols="30" rows="10">
+                Try-hard cardigan tattooed, pork belly put a bird on it flexitarian 
+                microdosing. Letterpress paleo taxidermy, synth lo-fi stumptown 
+                farm-to-table tousled cray dreamcatcher la croix authentic. Sriracha 
+                umami wolf crucifix truffaut food truck jianbing. Pitchfork marfa 
+                pickled brooklyn taxidermy. Cold-pressed freegan austin, put a bird 
+                on it williamsburg mustache banh mi try-hard irony. Viral retro 
+                iceland, vexillologist yr artisan stumptown.
+                
+                Vaporware lomo brunch, plaid ugh ethical typewriter enamel pin fixie 
+                synth man bun twee gochujang. Bushwick enamel pin neutra trust fund 
+                disrupt yr kale chips cloud bread gentrify banjo ethical. Irony kogi 
+                hell of, helvetica next level chambray organic mustache portland 
+                distillery shabby chic semiotics pop-up. Tousled dreamcatcher 
+                stumptown, 90's kinfolk four loko enamel pin. XOXO narwhal raw denim 
+                hoodie unicorn letterpress umami kinfolk pok pok. Shabby chic 
+                gluten-free pop-up, lo-fi normcore tbh cronut yr hella sartorial 
+                narwhal put a bird on it coloring book. Unicorn artisan sustainable, 
+                everyday carry mumblecore meggings blue bottle letterpress.
+                
+                Dummy text? More like dummy thicc text, amirite?
+            </textarea> -->
+
+      <!-- <img src="./images/graveyard-dark.png" alt="" id="s3-bottom"> -->
+      <img src="./images/s3-top.png" alt="" id="s3-top">
+    </section>
+    <section id="s3">
+      <h2>Episodes</h2>
+      <div id="merch-table">
+        <table>
+          <ol>
+            <iframe src="https://open.spotify.com/embed/episode/3TYZ8B6xuzgw0i5wMbp1GQ?theme=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </ol>
+          <ol>
+            <iframe src="https://open.spotify.com/embed/episode/1VsMGW2EYGzQw5Ru9szmQw?theme=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </ol>
+          <ol>
+            <iframe src="https://open.spotify.com/embed/episode/4GhRsEaV3oPKZmfFKFdV4O?theme=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </ol>
+        </table>
+      </div>
+      <div class="bottom-border">
+        <img src="./images/graveyard-darker.png" alt="" class="bottom-border" id="graveyard">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <figure class="edit-by">
+      <img src="./images/swiff.jpg" width="50px" height="50px">
+      <span>Edited by <a href="https://github.com/swifferwarrior">SwifferWarrior</a> © 2020 </span>
+    </figure>
+
+    <figure class='social-media'>
+      <a href="mailto: nightmaretown18@gmail.com" title="Email">
+        <img src="./images/email.png" alt="Email">
+      </a>
+
+      <a href="https://www.facebook.com/nightmaretown18/" title="Facebook">
+        <img src='./images/facebook.png'>
+      </a>
+
+      <a href="https://www.instagram.com/nightmaretown18/" title="Instagram">
+        <img src='./images/instagram.png'>
+      </a>
+
+      <a href="https://twitter.com/nightmaretown18" title="Twitter">
+        <img src='./images/twitter.png'>
+      </a>
+
+      <a href="https://www.youtube.com/channel/UC-Tx0f_-SNZr7ADqVE3vbJA" title="YouChoob">
+        <img src='images/youtube.png'>
+      </a>
+    </figure>
+  </footer>
+
+  <script type="text/javascript">
+    var random = Math.floor(stories.length * Math.random());
+    var tale = stories[random];
+
+    document.getElementById('story').innerHTML = tale;
+  </script>
+  <script type="text/javascript" src="../js/rest.js"></script>
 </body>
+
 </html>

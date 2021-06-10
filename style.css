@@ -1,8 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
     color: antiquewhite;
+    /* max-width: 1080px; */
+}
+
+body{
+    background-color: #0d0d0d;
+    width: 100%;
+
 }
 
 header, footer{
@@ -10,11 +16,40 @@ header, footer{
 }
 
 h1{
-    font-size: 8rem;
+    font-size: 8vw;
     font-family: "Fredericka the Great", sans-serif;
-
+    background: none;
+    /* background: rgba(43, 12, 43 , 0.75); */
+    /* background-image: url(./images/title-bg.png); */
+    position:absolute;
+    height: auto;
+    display: inline;
+    top: 15%;
+    float: left;
+    left: 50px;
+    font-weight: 100;
+    max-width: 90%;
 }
 
+nav{
+    display: inline-block;
+    display: none;
+    position: fixed;
+    top: 2.5%;
+    right: 2.55%;
+}
+
+#title-bg{
+    display: block;
+    /* position: absol; */
+    /* position: fixed; */
+    width: 100%;
+}
+
+#hello{
+    text-align: center;
+    margin: 0 5%;
+}
 #s1, #s2, #s3{
     /* margin: 25px; */
     padding: 10% 0% -1% 0%;
@@ -28,7 +63,11 @@ h1{
 
 p, #s2 textarea{
     /* padding: 5% 0%; */
-    font-size: 1.5rem;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.85rem;
+    line-height: 1.5;
+    letter-spacing: .15rem;
+    font-weight: 600;
     /* font-family: "Tulpen One", Arial, Helvetica, sans-serif; */
     z-index: 10;
     padding: 5% 5% 0% 5%;
@@ -36,26 +75,111 @@ p, #s2 textarea{
 
 #s3 table ol{
     font-size: 1.5rem;
+    background: none;
+    /* background-color: #0D0D0D; */
 }
 table, ol{
-    background-color: rgba(43, 12, 43 , 0.15);
-    width: 90%;
-    margin: 5%;
+    /* background-color: rgba(43, 12, 43 , 0.15); */
+    width: 80%;
+    margin: 2.5% 5%;
+    /* background-color: #0D0D0D; */
 }
 
+#merch-table{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+ol p{
+    z-index: 2;
+}
+
+body main .manda, body main .betty {
+    display: block;
+    width: 60%;
+    min-height: 300px;
+    text-align: justify;
+    /* margin: 0; */
+    background: none;
+
+}
+
+body main .manda img, body main .betty img {
+    width: 100%;
+    background: none;
+}
+
+body main .manda .betty-img, body main .manda .manda-img, body main .betty .betty-img, body main .betty .manda-img {
+    height: auto;
+    max-width: 250px;
+    display: block;
+    position: relative;
+    background: none;
+}
+
+body main .manda .manda-img, body main .betty .manda-img {
+  float: left;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+body main .manda .betty-img, body main .betty .betty-img {
+  margin-right: 50px;
+  margin-left: 20px;
+  float: right;
+}
+
+.betty, .manda{
+    margin: auto;
+}
+
+#open-quote, #close-quote{
+    max-width: 50px;
+    font-family: "Fredericka the Great", sans-serif;
+}
+
+body main .quote-story #close-quote {
+    display: inline-block;
+    margin-left: 85%;
+  }
+
+  #story{
+      padding-top: 0;
+  }
 #s1{
     background-color: #D9043D;
+    /* background-image: url(/images/nightmare-card-light.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100% */
 }
 #s2{
     background-color: #3c1642;
+    /* background-image: url(/images/graveyard-dark.png); */
+    /* background-image: url(/images/s3-top.png); */
+    /* background-position: bottom; */
+    /* background-repeat: no-repeat; */
+    /* background-position-y: bottom; */
+    /* background-size: 100%; */
 }
 #s3{
     /* background-color: #0a071a; */
-    background-color: rgba(30, 10, 30 , 1.0);
+    /* background-color: rgba(30, 10, 30 , 1.0); */
+    background-color: #1e0a1e;
+
+}
+
+#s3-top{
+    display: block;
+    width: 100%;
 }
 footer{
-    background-color: #0D0D0D;
-    background-color: #0D0D0D;
+    background-color: black;
+    display: block;
+    position: relative;
+    /* padding: 10% 5%; */
+    /* background-color: #0D0D0D; */
 }
 
 p, h2, textarea{
@@ -70,40 +194,80 @@ img{
 }
 
 #s1-space{
-    margin-bottom: 10%;
+    /* margin-bottom: 5%; */
 }
 
 textarea{
-    width: 95%;
+    width: 80%;
     font-family: "Homemade Apple", sans-serif;
     padding: 2.5%;
+    margin: 5%;
 }
 
 .bottom-border{
-    /* position:static; */
-    /* position:relative; */
-    /* position:absolute; */
     position: sticky;
     display: block;
+    /* display: none; */
     background: none;
     bottom: -5px;
     width: 100%;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 2;
     
 }
 
 #purple-bottom{
     position: relative;
 }
+
+#s3-bottom{
+    background: none;
+    width: 100%;
+    position: relative;
+    display: block;
+}
 /* section{
     margin-bottom: 0;
     padding-bottom: 0;
 } */
 
+.edit-by{
+    display: inline;
+    background: none;
+    padding: 1%;
+}
+
+.social-media{
+    display: inline-block;
+    position: relative;
+    filter:invert(100%);
+    text-align: center;
+    background: none;
+    float: right;
+}
+
+.social-media a{
+    background: none;
+}
+
+.social-media a img{
+    width: 40px;
+    height: auto;
+    position: relative;
+    background: none;
+    padding: 1%;
+}
 
 
+#graveyard{
+    /* max-width: 1080px; */
+    width: 100%;
+}
+
+.apple{
+    font-family: 'Homemade Apple';
+}
 /***** FONTS *****/
 @font-face {
     font-family: "wildwood";
@@ -151,6 +315,16 @@ textarea{
     src: local("Tulpen One"), local("TulpenOne-Regular"), url(https://fonts.gstatic.com/s/tulpenone/v9/dFa6ZfeC474skLgesc0Cajo6_Q.woff2) format("woff2");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+
+  @font-face {
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/josefinslab/v13/lW-swjwOK3Ps5GSJlNNkMalNpiZe_ldbOR4W71msR349Kg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* font-family: 'Josefin Slab', serif; */
 
   em {
   font-style: italic;
