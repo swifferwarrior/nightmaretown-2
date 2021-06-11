@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
   <title>Nightmaretown 2.0</title>
 
   <script src=".\js\tales.js"></script>
@@ -16,7 +17,7 @@
       } else {
         x.style.display = "none";
       }
-    } 
+    }
   </script>
 </head>
 
@@ -39,18 +40,9 @@
   </header>
   <main>
     <section id="s1">
-      <h2 id="hello">Hello Neighbor!</h2>
-      <!-- <p id="s1-space">"I'm baby farm-to-table humblebrag id leggings portland.
-        Fanny pack listicle occaecat church-key, brooklyn retro
-        cornhole hoodie taxidermy direct trade ipsum lorem
-        sustainable eu. Occupy af 3 wolf moon +1 hammock blue
-        bottle ad affogato irure tumblr food truck vaporware
-        lomo art party. Ipsum master cleanse fam poke kitsch
-        gochujang. Pitchfork fashion axe nulla distillery
-        tumeric iceland, kale chips brunch thundercats ea retro
-        aesthetic chillwave cornhole veniam. Locavore waistcoat
-        dolor copper mug umami brunch chambray et shoreditch."
-      </p> -->
+      <h2 id="hello">Hello Neighbor!
+        <img src="./images/hand-bg3.png" alt="" id="hand">
+      </h2>
       <p id="s1-space">
         Hi there! We are your hosts, Betty Boom and Mandamonium. We would like
         to welcome you to NightmareTown, a whimsically creepy podcast where each
@@ -60,7 +52,7 @@
         week, but always chilling. Become a neighbor and join us for some truly
         scary stories.
       </p>
-      <div id="about-us">
+      <div class="about-us">
         <div class="manda">
           <h2>Manda Monium</h2>
           <div class='about-her'>
@@ -73,6 +65,22 @@
           </div>
         </div>
 
+        <!-- <div class='betty'>
+          <h2>Betty Boom</h2>
+          <div class='about-me'>
+            <img src="../images/betty.jpg" class="betty-img">
+            <p class="betty-text">"Hello Neighbors! Betty Boom here, the <strong>brain mama</strong> and other co-host
+              of NightmareTown! I'm obsessed with True Crime, Aliens, and most things that go bump in the night. I love
+              telling spooky stories and hearing about other's experiences as well. So tell us a story!"</p>
+          </div>
+        </div> -->
+      </div>
+      <div class="bottom-border" id="purple-bottom">
+        <img src="./images/nightmare-card-light.png" alt="" class="bottom-border">
+      </div>
+    </section>
+    <section id="s2">
+      <div class="about-us">
         <div class='betty'>
           <h2>Betty Boom</h2>
           <div class='about-me'>
@@ -82,12 +90,18 @@
               telling spooky stories and hearing about other's experiences as well. So tell us a story!"</p>
           </div>
         </div>
-        <div class="bottom-border" id="purple-bottom">
-          <img src="./images/nightmare-card-light.png" alt="" class="bottom-border">
-        </div>
+      </div>
+
+
+      <!-- <textarea name="box" id="" cols="30" rows="10">
+      </textarea> -->
+
+      <!-- <img src="./images/graveyard-dark.png" alt="" id="s3-bottom"> -->
+      <img src="./images/s3-top.png" alt="" id="s2-bottom">
     </section>
-    <section id="s2">
-      <h2 id="tales">Tales From Neighborhood Watch</h2>
+    <section id="s3">
+      <div id="tales">
+        <h2 id="tales-title">Tales From Neighborhood Watch</h2>
       <div class="quote-story">
         <img id="open-quote"
           src="https://cdn3.iconfinder.com/data/icons/smoothfill-content/30/content_041-open_quote-text-type-editor-512.png"
@@ -97,51 +111,35 @@
           src="https://cdn3.iconfinder.com/data/icons/smoothfill-content/30/content_040-close_quote-text-type-editor-512.png"
           alt="close-quote">
       </div>
-      </div>
-
-      <!-- <textarea name="box" id="" cols="30" rows="10">
-                Try-hard cardigan tattooed, pork belly put a bird on it flexitarian 
-                microdosing. Letterpress paleo taxidermy, synth lo-fi stumptown 
-                farm-to-table tousled cray dreamcatcher la croix authentic. Sriracha 
-                umami wolf crucifix truffaut food truck jianbing. Pitchfork marfa 
-                pickled brooklyn taxidermy. Cold-pressed freegan austin, put a bird 
-                on it williamsburg mustache banh mi try-hard irony. Viral retro 
-                iceland, vexillologist yr artisan stumptown.
-                
-                Vaporware lomo brunch, plaid ugh ethical typewriter enamel pin fixie 
-                synth man bun twee gochujang. Bushwick enamel pin neutra trust fund 
-                disrupt yr kale chips cloud bread gentrify banjo ethical. Irony kogi 
-                hell of, helvetica next level chambray organic mustache portland 
-                distillery shabby chic semiotics pop-up. Tousled dreamcatcher 
-                stumptown, 90's kinfolk four loko enamel pin. XOXO narwhal raw denim 
-                hoodie unicorn letterpress umami kinfolk pok pok. Shabby chic 
-                gluten-free pop-up, lo-fi normcore tbh cronut yr hella sartorial 
-                narwhal put a bird on it coloring book. Unicorn artisan sustainable, 
-                everyday carry mumblecore meggings blue bottle letterpress.
-                
-                Dummy text? More like dummy thicc text, amirite?
-            </textarea> -->
-
-      <!-- <img src="./images/graveyard-dark.png" alt="" id="s3-bottom"> -->
-      <img src="./images/s3-top.png" alt="" id="s3-top">
-    </section>
-    <section id="s3">
-      <h2>Episodes</h2>
-      <div id="merch-table">
-        <table>
-          <ol>
-            <iframe src="https://open.spotify.com/embed/episode/3TYZ8B6xuzgw0i5wMbp1GQ?theme=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </ol>
-          <ol>
-            <iframe src="https://open.spotify.com/embed/episode/1VsMGW2EYGzQw5Ru9szmQw?theme=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </ol>
-          <ol>
-            <iframe src="https://open.spotify.com/embed/episode/4GhRsEaV3oPKZmfFKFdV4O?theme=0" width="100%" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </ol>
-        </table>
-      </div>
+    </div>
+      
       <div class="bottom-border">
-        <img src="./images/graveyard-darker.png" alt="" class="bottom-border" id="graveyard">
+        <img src="./images/halloween-5653034_1920.png" alt="">
+      </div>
+      <div id="podcasts">
+        <h2>Episodes</h2>
+        <div id="merch-table">
+          <table>
+            <ol>
+              <iframe src="https://open.spotify.com/embed/episode/3TYZ8B6xuzgw0i5wMbp1GQ?theme=0" width="100%"
+                height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </ol>
+            <ol>
+              <iframe src="https://open.spotify.com/embed/episode/1VsMGW2EYGzQw5Ru9szmQw?theme=0" width="100%"
+                height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </ol>
+            <ol>
+              <iframe src="https://open.spotify.com/embed/episode/4GhRsEaV3oPKZmfFKFdV4O?theme=0" width="100%"
+                height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </ol>
+          </table>
+        </div>
+      </div>
+
+    </section>
+    <section id="s4">
+      <div class="bottom-border">
+        <img src="./images/graveyard.png" alt="" class="bottom-border" id="graveyard">
       </div>
     </section>
   </main>

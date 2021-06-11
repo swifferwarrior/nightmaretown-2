@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0D0D0D;
+  width: 100%;
+  color: antiquewhite;
+}
+body header {
+  width: 100%;
+}
+body header h1 {
+  font-size: 9vw;
+  font-family: "Fredericka the Great", sans-serif;
+  background: none;
+  position: absolute;
+  height: auto;
+  display: inline;
+  top: 14vw;
+  float: left;
+  left: 8vw;
+  font-weight: 100;
+  max-width: 90%;
+}
+body header #title-bg {
+  display: block;
+  width: 100%;
+}
+body header nav {
+  display: inline-block;
+  display: none;
+  position: fixed;
+  top: 2.5%;
+  right: 2.55%;
+}
+body main #s1, body main #s2, body main #s3 {
+  padding: 10% 0% -1% 0%;
+  margin-bottom: 0;
+  font-family: "Homemade Apple", sans-serif;
+}
+body main #s1 h2, body main #s2 h2, body main #s3 h2 {
+  font-size: 3rem;
+}
+body main #s1 {
+  background-color: #D9043D;
+  position: relative;
+}
+body main #s1 #hello {
+  text-align: center;
+  margin: 0 5%;
+  font-size: 3rem;
+}
+body main #s1 #hand {
+  position: absolute;
+  max-width: 33%;
+  top: -1vw;
+  left: 30vw;
+  z-index: -1;
+  background: url(../images/hand-appear.png) no-repeat fixed center center;
+  background-size: cover;
+}
+body main #s1 #s1-space {
+  margin-top: 4%;
+  text-align: start;
+  padding: 7.5% 10% 2.5% 10%;
+}
+body main #s1 #purple-bottom {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+body main #s1 #purple-bottom .bottom-border {
+  display: block;
+  width: 100%;
+}
+body main #s1 .manda, body main #s1 .betty {
+  display: block;
+  width: 60%;
+  min-height: 300px;
+  text-align: justify;
+  /* margin: 0; */
+  background: none;
+}
+body main #s1 .manda img, body main #s1 .betty img {
+  width: 100%;
+  background: none;
+}
+body main #s1 .manda .betty-img, body main #s1 .manda .manda-img, body main #s1 .betty .betty-img, body main #s1 .betty .manda-img {
+  height: auto;
+  max-width: 250px;
+  display: block;
+  position: relative;
+  background: none;
+  float: left;
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+body main #s1 .manda .manda-img, body main #s1 .betty .manda-img {
+  float: left;
+}
+body main #s1 .betty, body main #s1 .manda {
+  margin: auto;
+}
+body main #s2 {
+  background-color: #3c1642;
+}
+body main #s2 .betty {
+  width: 60%;
+  min-height: 300px;
+  text-align: justify;
+  margin: auto;
+  /* margin: 0; */
+  background: none;
+}
+body main #s2 .betty img {
+  width: 100%;
+  background: none;
+  float: right;
+  top: 10%;
+}
+body main #s2 .betty-img, body main #s2 .manda-img {
+  height: auto;
+  max-width: 250px;
+  display: block;
+  position: relative;
+  background: none;
+  float: left;
+  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+body main #s2 .manda-img {
+  float: left;
+}
+body main #s2 #s2-bottom {
+  display: block;
+  width: 100%;
+}
+body main #s3 {
+  position: relative;
+  background-color: #1e0a1e;
+}
+body main #s3 #open-quote, body main #s3 #close-quote {
+  max-width: 50px;
+  font-family: "Fredericka the Great", sans-serif;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+body main #s3 #close-quote {
+  position: absolute;
+  right: 5vw;
+  bottom: 2vw;
+}
+body main #s3 body main .quote-story #close-quote {
+  display: inline-block;
+  margin-left: 85%;
+}
+body main #s3 #story {
+  padding-top: 0;
+}
+body main #s3 table {
+  width: 80%;
+  margin: 2.5% 5%;
+}
+body main #s3 table ol {
+  font-size: 1.5rem;
+  background: none;
+  width: 80%;
+  margin: 2.5% 5%;
+}
+body main #s3 #tales {
+  width: 80%;
+  margin: 0 auto 5% auto;
+  position: relative;
+}
+body main #s3 .bottom-border {
+  display: block;
+  /* display: none; */
+  background: none;
+  bottom: -5px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+body main #s3 #podcasts {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  bottom: 5vw;
+}
+body main #s3 #graveyard {
+  /* max-width: 1080px; */
+  width: 100%;
+  position: sticky;
+}
+body main p, body main #s2 textarea {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.85rem;
+  line-height: 1.5;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+  z-index: 10;
+  padding: 5% 5% 0% 5%;
+}
+body footer {
+  background-color: black;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+body footer .edit-by {
+  display: inline;
+  background: none;
+  padding: 1%;
+}
+body footer .social-media {
+  display: inline-block;
+  position: relative;
+  filter: invert(100%);
+  text-align: center;
+  background: none;
+}
+body footer .social-media a {
+  background: none;
+}
+body footer .social-media a img {
+  width: 40px;
+  height: auto;
+  position: relative;
+  background: none;
+  padding: 1%;
+}
+body header, body footer {
+  width: 100%;
+}
+body img {
+  z-index: 0;
+}
+body p, body h2, body textarea {
+  background: none;
+  padding: 5% 5% 0% 5%;
+  z-index: 1000;
+  position: relative;
+}
+body p, body #s2 textarea {
+  /* padding: 5% 0%; */
+  font-family: "Josefin Slab", serif;
+  font-size: 1.85rem;
+  line-height: 1.5;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+  /* font-family: "Tulpen One", Arial, Helvetica, sans-serif; */
+  z-index: 10;
+  padding: 5% 5% 0% 5%;
+}
+body .bottom-border img {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+/***** FONTS *****/
+@font-face {
+  font-family: "wildwood";
+  src: url("https://www.wfonts.com/download/data/2016/03/01/wildwood/JFWilwod.ttf") format("truetype");
+  src: url("../fonts/JFWilwod.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*Wildwood*/
+@font-face {
+  font-family: "bosque-encantado";
+  src: url("https://dl.dafont.com/dl/?f=bosque_encantado");
+  src: url("..fonts/BosqueEncantado.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/*Bosque*/
+@font-face {
+  font-family: "Fredericka the Great";
+  font-style: normal;
+  font-weight: 400;
+  /*    font-display: swap;*/
+  src: local("Fredericka the Great"), local("FrederickatheGreat"), url(https://fonts.gstatic.com/s/frederickathegreat/v9/9Bt33CxNwt7aOctW2xjbCstzwVKsIBVV--Sjxbc.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*Fredericka the Great*/
+@font-face {
+  font-family: "Homemade Apple";
+  font-style: normal;
+  font-weight: 400;
+  /*    font-display: swap;*/
+  src: local("Homemade Apple Regular"), local("HomemadeApple-Regular"), url(https://fonts.gstatic.com/s/homemadeapple/v10/Qw3EZQFXECDrI2q789EKQZJob0x6XHg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*Homemade Apple*/
+@font-face {
+  font-family: "Tulpen One";
+  font-style: normal;
+  font-weight: 400;
+  /*  font-display: swap;*/
+  src: local("Tulpen One"), local("TulpenOne-Regular"), url(https://fonts.gstatic.com/s/tulpenone/v9/dFa6ZfeC474skLgesc0Cajo6_Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Josefin Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinslab/v13/lW-swjwOK3Ps5GSJlNNkMalNpiZe_ldbOR4W71msR349Kg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+em {
+  font-style: italic;
+}
+
+strong {
+  font-size: 1.1em;
+}
+
+.apple {
+  font-family: "Homemade Apple";
+}
+
+/***LINKS***/
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+a, .social-media img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  font-size: 1.3em;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  color: #D9043D;
+}/*# sourceMappingURL=main.css.map */
