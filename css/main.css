@@ -43,6 +43,12 @@ body main #s1, body main #s2, body main #s3 {
 body main #s1 h2, body main #s2 h2, body main #s3 h2 {
   font-size: 3rem;
 }
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s1 h2, body main #s2 h2, body main #s3 h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 body main #s1 {
   background-color: #D9043D;
   position: relative;
@@ -51,6 +57,13 @@ body main #s1 #hello {
   text-align: center;
   margin: 0 5%;
   font-size: 3rem;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s1 #hello {
+    font-size: 2rem;
+    line-height: 35px;
+    padding: 15%;
+  }
 }
 body main #s1 #hand {
   position: absolute;
@@ -61,10 +74,24 @@ body main #s1 #hand {
   background: url(../images/hand-appear.png) no-repeat fixed center center;
   background-size: cover;
 }
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s1 #hand {
+    max-width: 75%;
+    top: 10vw;
+    left: 10vw;
+    background-position-y: -150px;
+  }
+}
 body main #s1 #s1-space {
   margin-top: 4%;
   text-align: start;
   padding: 7.5% 10% 2.5% 10%;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s1 #s1-space {
+    text-align: center;
+    width: 90%;
+  }
 }
 body main #s1 #purple-bottom {
   position: relative;
@@ -105,6 +132,11 @@ body main #s1 .manda .manda-img, body main #s1 .betty .manda-img {
 body main #s1 .betty, body main #s1 .manda {
   margin: auto;
 }
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s1 .betty, body main #s1 .manda {
+    width: 90%;
+  }
+}
 body main #s2 {
   background-color: #3c1642;
 }
@@ -116,11 +148,21 @@ body main #s2 .betty {
   /* margin: 0; */
   background: none;
 }
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s2 .betty {
+    width: 90%;
+  }
+}
 body main #s2 .betty img {
   width: 100%;
   background: none;
   float: right;
   top: 10%;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s2 .betty img {
+    float: none;
+  }
 }
 body main #s2 .betty-img, body main #s2 .manda-img {
   height: auto;
@@ -151,6 +193,11 @@ body main #s3 #open-quote, body main #s3 #close-quote {
   -webkit-filter: invert(1);
   filter: invert(1);
 }
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s3 #open-quote, body main #s3 #close-quote {
+    max-width: 25px;
+  }
+}
 body main #s3 #close-quote {
   position: absolute;
   right: 5vw;
@@ -162,6 +209,11 @@ body main #s3 body main .quote-story #close-quote {
 }
 body main #s3 #story {
   padding-top: 0;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s3 #story {
+    padding: 0%;
+  }
 }
 body main #s3 table {
   width: 80%;
@@ -194,10 +246,24 @@ body main #s3 #podcasts {
   left: 20%;
   bottom: 5vw;
 }
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s3 #podcasts {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    background-color: #0D0D0D;
+    bottom: 0;
+  }
+}
 body main #s3 #graveyard {
   /* max-width: 1080px; */
   width: 100%;
   position: sticky;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s3 #graveyard {
+    position: relative;
+  }
 }
 body main p, body main #s2 textarea {
   font-family: "Josefin Slab", serif;
@@ -207,6 +273,12 @@ body main p, body main #s2 textarea {
   font-weight: 600;
   z-index: 10;
   padding: 5% 5% 0% 5%;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body main p, body main #s2 textarea {
+    font-size: 1.15rem;
+    text-align: center;
+  }
 }
 body footer {
   background-color: black;
@@ -258,6 +330,11 @@ body p, body #s2 textarea {
   /* font-family: "Tulpen One", Arial, Helvetica, sans-serif; */
   z-index: 10;
   padding: 5% 5% 0% 5%;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body p, body #s2 textarea {
+    font-size: 5px;
+  }
 }
 body .bottom-border img {
   width: 100%;

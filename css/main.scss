@@ -1,4 +1,4 @@
-$desktop: 1000px;
+// $desktop: 1000px;
 $colors: (
     s1: #D9043D,
     s2: #3c1642,
@@ -9,10 +9,16 @@ $colors: (
 @function color ($color-name){
     @return map-get($colors, $color-name);
 }
+
+// MIXINS //
+@mixin phone {
+    @media (min-width: 300px) and (max-width: 640px) {@content;}
+}
+@mixin tablet {
+    @media (min-width: 640px) and (max-width: 1000px) {@content;}
+}
 @mixin desktop {
-    @media (min-width: #{$desktop}) {
-        @content;
-    }
+    @media (min-width: 1000px) {@content;}
 }
 
 *{
@@ -36,7 +42,6 @@ body{
             display: inline;
             top: 14vw;
             float: left;
-            // left: 50px;
             left: 8vw;
             font-weight: 100;
             max-width: 90%;
@@ -63,6 +68,10 @@ body{
         }
         #s1 h2, #s2 h2, #s3 h2{
             font-size: 3rem;
+            @include phone {
+                font-size: 2rem;
+                text-align: center;
+            }
         }
         #s1{
             background-color: color(s1);
@@ -71,24 +80,36 @@ body{
                 text-align: center;
                 margin: 0 5%;
                 font-size: 3rem;
-
+                @include phone{
+                    font-size: 2rem;
+                    line-height: 35px;
+                    padding: 15%;
+                }
             }
             #hand{
                 position: absolute;
                 max-width: 33%;
-                // margin-left: auto;
-                // margin-right: auto;
                 top: -1vw;
                 left: 30vw;
                 z-index: -1;
                 background: url(../images/hand-appear.png) no-repeat fixed center center;
                 background-size: cover;
-                
+                @include phone{
+                    max-width: 75%;
+                    top: 10vw;
+                    left: 10vw;
+                    background-position-y: -150px;
+                    // margin: auto;
+                }
             }
             #s1-space{
                 margin-top: 4%;
                 text-align:start;
                 padding: 7.5% 10% 2.5% 10%;
+                @include phone{
+                    text-align: center;
+                    width: 90%;
+                }
             }
             #purple-bottom{
                 position: relative;
@@ -136,6 +157,10 @@ body{
                 
                 .betty, .manda{
                     margin: auto;
+                    @include phone{
+                        width: 90%;
+                        // margin: ;
+                    }
                 }
             }
         #s2{
@@ -147,11 +172,17 @@ body{
                     margin: auto;
                     /* margin: 0; */
                     background: none;
+                    @include phone{
+                        width: 90%;
+                    }
                     img{
                         width: 100%;
                         background: none;
                         float: right;
                         top: 10%;
+                        @include phone{
+                            float: none;
+                        }
                     }
                 }
                 .betty-img, .manda-img{
@@ -183,6 +214,9 @@ body{
                 font-family: "Fredericka the Great", sans-serif;
                 -webkit-filter: invert(1);
                 filter: invert(1);
+                @include phone{
+                    max-width: 25px;
+                }
             }
 
             #close-quote{
@@ -198,15 +232,28 @@ body{
             
             #story{
                 padding-top: 0;
+                @include phone{
+                    padding: 0%;
+                }
             }
             table{
                 width: 80%;
                 margin: 2.5% 5%;
+                // @include phone{
+                //         // scroll-snap-type: y mandatory;
+                //         padding: 0;
+                //         margin: 0;
+                //     }
                 ol{
                     font-size: 1.5rem;
                     background: none;
                     width: 80%;
                     margin: 2.5% 5%;
+                    // @include phone{
+                    //     display: inline;
+                    //     width: 90%;
+                    //     scroll-snap-align: start;
+                    // }
                 }
             }
             #tales{
@@ -230,13 +277,26 @@ body{
             #podcasts{
                 position: absolute;
                 width: 60%;
+                // height: 152px;
                 left: 20%;
                 bottom: 5vw;
+                @include phone{
+                    position: relative;
+                    left: 0%;
+                    width: 100%;
+                    background-color: color(charcoal);
+                    bottom: 0;
+
+                    // bottom: 1vw;
+                }
             }
             #graveyard{
                 /* max-width: 1080px; */
                 width: 100%;
                 position: sticky;
+                @include phone{
+                    position: relative;
+                }
             }
         }
         p, #s2 textarea{
@@ -247,6 +307,10 @@ body{
             font-weight: 600;
             z-index: 10;
             padding: 5% 5% 0% 5%;
+            @include phone{
+                font-size: 1.15rem;
+                text-align: center;
+            }
         }
     }
 
@@ -307,6 +371,9 @@ body{
         /* font-family: "Tulpen One", Arial, Helvetica, sans-serif; */
         z-index: 10;
         padding: 5% 5% 0% 5%;
+        @include phone{
+            font-size: 5px;
+        }
     }
     .bottom-border img{
         width: 100%;
