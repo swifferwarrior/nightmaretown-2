@@ -35,16 +35,21 @@ body header nav {
   top: 2.5%;
   right: 2.55%;
 }
-body main #s1, body main #s2, body main #s3 {
+body main #s1, body main #s2, body main #s3, body main #s4 {
   padding: 10% 0% -1% 0%;
   margin-bottom: 0;
   font-family: "Homemade Apple", sans-serif;
 }
-body main #s1 h2, body main #s2 h2, body main #s3 h2 {
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s1, body main #s2, body main #s3, body main #s4 {
+    position: sticky;
+  }
+}
+body main #s1 h2, body main #s2 h2, body main #s3 h2, body main #s4 h2 {
   font-size: 3rem;
 }
 @media (min-width: 300px) and (max-width: 640px) {
-  body main #s1 h2, body main #s2 h2, body main #s3 h2 {
+  body main #s1 h2, body main #s2 h2, body main #s3 h2, body main #s4 h2 {
     font-size: 2rem;
     text-align: center;
   }
@@ -196,16 +201,13 @@ body main #s3 #open-quote, body main #s3 #close-quote {
 @media (min-width: 300px) and (max-width: 640px) {
   body main #s3 #open-quote, body main #s3 #close-quote {
     max-width: 25px;
+    position: sticky;
   }
 }
 body main #s3 #close-quote {
   position: absolute;
   right: 5vw;
   bottom: 2vw;
-}
-body main #s3 body main .quote-story #close-quote {
-  display: inline-block;
-  margin-left: 85%;
 }
 body main #s3 #story {
   padding-top: 0;
@@ -229,6 +231,10 @@ body main #s3 #tales {
   width: 80%;
   margin: 0 auto 5% auto;
   position: relative;
+}
+body main #s3 #tales .quote-story #close-quote {
+  display: inline-block;
+  margin-left: 85%;
 }
 body main #s3 .bottom-border {
   display: block;
@@ -255,15 +261,10 @@ body main #s3 #podcasts {
     bottom: 0;
   }
 }
-body main #s3 #graveyard {
+body main #s4 #graveyard-black {
   /* max-width: 1080px; */
   width: 100%;
   position: sticky;
-}
-@media (min-width: 300px) and (max-width: 640px) {
-  body main #s3 #graveyard {
-    position: relative;
-  }
 }
 body main p, body main #s2 textarea {
   font-family: "Josefin Slab", serif;
@@ -286,41 +287,65 @@ body footer {
   position: relative;
   width: 100%;
 }
+@media (min-width: 300px) and (max-width: 640px) {
+  body footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 body footer .edit-by {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
   background: none;
   padding: 1%;
 }
-body footer .social-media {
+@media (min-width: 300px) and (max-width: 640px) {
+  body footer .edit-by {
+    display: inline;
+    justify-content: start;
+    position: center;
+  }
+  body footer .edit-by img {
+    width: 10px;
+  }
+}
+body footer .edit-by .social-media {
   display: inline-block;
   position: relative;
   filter: invert(100%);
   text-align: center;
   background: none;
 }
-body footer .social-media a {
+@media (min-width: 300px) and (max-width: 640px) {
+  body footer .edit-by .social-media {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+body footer .edit-by .social-media a {
   background: none;
 }
-body footer .social-media a img {
+body footer .edit-by .social-media a img {
   width: 40px;
   height: auto;
   position: relative;
   background: none;
   padding: 1%;
 }
-body header, body footer {
+body footer header, body footer footer {
   width: 100%;
 }
-body img {
+body footer img {
   z-index: 0;
 }
-body p, body h2, body textarea {
+body footer p, body footer h2, body footer textarea {
   background: none;
   padding: 5% 5% 0% 5%;
   z-index: 1000;
   position: relative;
 }
-body p, body #s2 textarea {
+body footer p, body footer #s2 textarea {
   /* padding: 5% 0%; */
   font-family: "Josefin Slab", serif;
   font-size: 1.85rem;
@@ -332,11 +357,11 @@ body p, body #s2 textarea {
   padding: 5% 5% 0% 5%;
 }
 @media (min-width: 300px) and (max-width: 640px) {
-  body p, body #s2 textarea {
+  body footer p, body footer #s2 textarea {
     font-size: 5px;
   }
 }
-body .bottom-border img {
+body footer #graveyard-black {
   width: 100%;
   position: relative;
   display: block;

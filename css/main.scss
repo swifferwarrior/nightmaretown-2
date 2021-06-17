@@ -59,14 +59,16 @@ body{
         }
     }
 
-
     main{
-        #s1, #s2, #s3{
+        #s1, #s2, #s3, #s4{
             padding: 10% 0% -1% 0%;
             margin-bottom: 0;
             font-family: "Homemade Apple", sans-serif;
+            @include phone{
+                position: sticky;
+            }
         }
-        #s1 h2, #s2 h2, #s3 h2{
+        #s1 h2, #s2 h2, #s3 h2, #s4 h2{
             font-size: 3rem;
             @include phone {
                 font-size: 2rem;
@@ -216,6 +218,7 @@ body{
                 filter: invert(1);
                 @include phone{
                     max-width: 25px;
+                    position: sticky;
                 }
             }
 
@@ -225,10 +228,6 @@ body{
                 bottom: 2vw;
             }
                 
-            body main .quote-story #close-quote {
-            display: inline-block;
-            margin-left: 85%;
-            }
             
             #story{
                 padding-top: 0;
@@ -240,40 +239,48 @@ body{
                 width: 80%;
                 margin: 2.5% 5%;
                 // @include phone{
-                //         // scroll-snap-type: y mandatory;
-                //         padding: 0;
-                //         margin: 0;
-                //     }
-                ol{
-                    font-size: 1.5rem;
-                    background: none;
-                    width: 80%;
-                    margin: 2.5% 5%;
-                    // @include phone{
-                    //     display: inline;
-                    //     width: 90%;
-                    //     scroll-snap-align: start;
-                    // }
-                }
-            }
-            #tales{
-                width: 80%;
-                margin: 0 auto 5% auto;
-                // margin-bottom: 5%;
-                position: relative;
-            }
-            .bottom-border{
-                // position: sticky;
-                display: block;
-                /* display: none; */
+                    //         // scroll-snap-type: y mandatory;
+                    //         padding: 0;
+                    //         margin: 0;
+                    //     }
+                    ol{
+                        font-size: 1.5rem;
+                        background: none;
+                        width: 80%;
+                        margin: 2.5% 5%;
+                        // @include phone{
+                            //     display: inline;
+                            //     width: 90%;
+                            //     scroll-snap-align: start;
+                            // }
+                        }
+                    }
+                    #tales{
+                        width: 80%;
+                        margin: 0 auto 5% auto;
+                        // margin-bottom: 5%;
+                        position: relative;
+                        .quote-story #close-quote {
+                        display: inline-block;
+                        margin-left: 85%;
+                        }
+                    }
+                    .bottom-border{
+                        // position: sticky;
+                        display: block;
+                        /* display: none; */
                 background: none;
                 bottom: -5px;
                 width: 100%;
                 margin: 0;
                 padding: 0;
                 z-index: 2;
-                
+
             }
+            // #tree-charcoal{
+            //     display: block;
+            //     width: 100%;
+            // }
             #podcasts{
                 position: absolute;
                 width: 60%;
@@ -290,13 +297,16 @@ body{
                     // bottom: 1vw;
                 }
             }
-            #graveyard{
+
+        }
+        #s4{
+            #graveyard-black{
                 /* max-width: 1080px; */
                 width: 100%;
                 position: sticky;
-                @include phone{
-                    position: relative;
-                }
+                // @include phone{
+                //     position: relative;
+                // }
             }
         }
         p, #s2 textarea{
@@ -314,16 +324,29 @@ body{
         }
     }
 
-
     footer{
         background-color: black;
         display: block;
         position: relative;
         width: 100%;
+        @include phone{
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
         .edit-by{
-            display: inline;
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
             background: none;
             padding: 1%;
+            @include phone{
+                display: inline;
+                justify-content: start;
+                position: center;
+                img{
+                    width: 10px;
+            }
         }
         
         .social-media{
@@ -333,6 +356,10 @@ body{
             text-align: center;
             background: none;
             // float: right;
+            @include phone{
+                display: flex;
+                justify-content: space-around;
+            }
         }
         
         .social-media a{
@@ -375,12 +402,13 @@ body{
             font-size: 5px;
         }
     }
-    .bottom-border img{
+    #graveyard-black{
         width: 100%;
         position: relative;
         display: block;
     }
     
+}
 }
 /***** FONTS *****/
 @font-face {
