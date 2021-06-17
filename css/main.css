@@ -191,6 +191,7 @@ body main #s3 {
 body main #s3 #open-quote, body main #s3 #close-quote {
   max-width: 50px;
   font-family: "Fredericka the Great", sans-serif;
+  -webkit-filter: invert(1);
   filter: invert(1);
 }
 @media (min-width: 300px) and (max-width: 640px) {
@@ -440,11 +441,13 @@ a {
 }
 
 a, .social-media img {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 a:hover {
   font-size: 1.3em;
+  -webkit-transform: scale(1.3);
   transform: scale(1.3);
   color: #D9043D;
 }/*# sourceMappingURL=main.css.map */

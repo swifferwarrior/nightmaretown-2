@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
   <title>Nightmaretown 2.0</title>
   <link rel="shortcut icon" type="image/ico" href="./images/bigfoot-darkpink.ico"/>
@@ -40,10 +40,11 @@
     </nav>
   </header>
   <main>
-    <section id="s1">
-      <h2 id="hello">Hello Neighbor!
+    <section id="s1" class="sections">
+      <div id="greeting">
+        <h2 id="hello">Hello Neighbor!</h2>
         <img src="./images/hand-bg3.png" alt="" id="hand">
-      </h2>
+      </div>
       <p id="s1-space">
         Hi there! We are your hosts, Betty Boom and Mandamonium. We would like
         to welcome you to NightmareTown, a whimsically creepy podcast where each
@@ -57,7 +58,7 @@
         <div class="manda">
           <h2>Manda Monium</h2>
           <div class='about-her'>
-            <img src="../images/manda.jpg" class="manda-img">
+            <img src="../images/manda.jpg" id="manda-img" class="pro-pic">
             <p class='manda-text'>"Hi there! My name is Mandamonium I'm the co-host of Nightmare town! An avid hiker, I
               love being out in the woods, even if otherworldly things may inhabit them.
               I'm a natural-born geek, and I also love to create anything and everything! One of my favorite creepypasta
@@ -76,16 +77,17 @@
           </div>
         </div> -->
       </div>
-      <div class="bottom-border" id="purple-bottom">
-        <img src="./images/nightmare-card-light.png" alt="" class="bottom-border">
-      </div>
+      <!-- <div class="bottom-border" > -->
+        <img src="./images/nightmare-card-light.png" alt="" id="purple-bottom" class="bottom-border">
+      <!-- </div> -->
     </section>
-    <section id="s2">
+
+    <section id="s2" class="sections">
       <div class="about-us">
         <div class='betty'>
           <h2>Betty Boom</h2>
           <div class='about-me'>
-            <img src="../images/betty.jpg" class="betty-img">
+            <img src="../images/betty.jpg" id="betty-img" class="pro-pic">
             <p class="betty-text">"Hello Neighbors! Betty Boom here, the <strong>brain mama</strong> and other co-host
               of NightmareTown! I'm obsessed with True Crime, Aliens, and most things that go bump in the night. I love
               telling spooky stories and hearing about other's experiences as well. So tell us a story!"</p>
@@ -98,54 +100,59 @@
       </textarea> -->
 
       <!-- <img src="./images/graveyard-dark.png" alt="" id="s3-bottom"> -->
-      <img src="./images/s3-top.png" alt="" id="s2-bottom">
+      <img src="./images/s3-top.png" alt="" id="s2-bottom" class="bottom-border">
     </section>
-    <section id="s3">
+
+    <section id="s3" class="sections">
       <div id="tales">
         <h2 id="tales-title">Tales From Neighborhood Watch</h2>
-        <div class="quote-story">
-          <img id="open-quote"
+        <div id="anecdote">
+          <!-- <img id="open-quote"
             src="https://cdn3.iconfinder.com/data/icons/smoothfill-content/30/content_041-open_quote-text-type-editor-512.png"
-            alt="open-quote">
+            alt="open-quote" class="quote"> -->
           <p id='story'></p>
-          <img id="close-quote"
+          <!-- <img id="close-quote"
             src="https://cdn3.iconfinder.com/data/icons/smoothfill-content/30/content_040-close_quote-text-type-editor-512.png"
-            alt="close-quote">
+            alt="close-quote" class="quote"> -->
+            <p id="signature"></p>
         </div>
       </div>
 
-      <div class="bottom-border">
-        <img src="./images/halloween-5653034_1920.png" alt="" id="tree-charcoal" class="bottom-border">
-      </div>
       <div id="podcasts">
         <h2>Episodes</h2>
         <div id="merch-table">
           <!-- <table> -->
-          <ol>
-            <iframe src="https://open.spotify.com/embed/episode/3TYZ8B6xuzgw0i5wMbp1GQ?theme=0" width="100%"
+            <ol>
+              <iframe src="https://open.spotify.com/embed/episode/3TYZ8B6xuzgw0i5wMbp1GQ?theme=0" width="100%"
               height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </ol>
-          <ol>
-            <iframe src="https://open.spotify.com/embed/episode/1VsMGW2EYGzQw5Ru9szmQw?theme=0" width="100%"
+            </ol>
+            <ol>
+              <iframe src="https://open.spotify.com/embed/episode/1VsMGW2EYGzQw5Ru9szmQw?theme=0" width="100%"
               height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </ol>
-          <ol>
-            <iframe src="https://open.spotify.com/embed/episode/4GhRsEaV3oPKZmfFKFdV4O?theme=0" width="100%"
+            </ol>
+            <ol>
+              <iframe src="https://open.spotify.com/embed/episode/4GhRsEaV3oPKZmfFKFdV4O?theme=0" width="100%"
               height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </ol>
-          <!-- </table> -->
+            </ol>
+            <!-- </table> -->
+          </div>
         </div>
-      </div>
+        <!-- <div class="bottom-border"> -->
+          <img src="./images/halloween-5653034_1920.png" alt="" id="tree-charcoal" class="bottom-border">
+        <!-- </div> -->
 
     </section>
-    <section id="s4">
+
+    <section id="s4" class="sections">
       <h2>Tell Us A Story...</h2>
       <!-- <h3>Get featured in our Tales From Neighborhood Watch!</h3> -->
-      <div class="bottom-border">
+      <!-- <div class="bottom-border"> -->
+        <textarea name="" id="" cols="30" rows="7">Well what happened is is...</textarea>
         <img src="./images/graveyard.png" alt="" class="bottom-border" id="graveyard-black">
-      </div>
+      <!-- </div> -->
     </section>
   </main>
+
   <footer>
     <figure class="edit-by">
       <img src="./images/swiff.jpg" width="50px" height="50px">
@@ -175,12 +182,8 @@
     </figure>
   </footer>
 
-  <script type="text/javascript">
-    var random = Math.floor(stories.length * Math.random());
-    var tale = stories[random];
+  <script type="text/javascript" src="./js/neighborhood-watch.js"></script>
 
-    document.getElementById('story').innerHTML = tale;
-  </script>
   <script type="text/javascript" src="../js/rest.js"></script>
 </body>
 
