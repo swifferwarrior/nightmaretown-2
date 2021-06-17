@@ -40,11 +40,6 @@ body main #s1, body main #s2, body main #s3, body main #s4 {
   margin-bottom: 0;
   font-family: "Homemade Apple", sans-serif;
 }
-@media (min-width: 300px) and (max-width: 640px) {
-  body main #s1, body main #s2, body main #s3, body main #s4 {
-    position: sticky;
-  }
-}
 body main #s1 h2, body main #s2 h2, body main #s3 h2, body main #s4 h2 {
   font-size: 3rem;
 }
@@ -55,7 +50,7 @@ body main #s1 h2, body main #s2 h2, body main #s3 h2, body main #s4 h2 {
   }
 }
 body main #s1 {
-  background-color: #D9043D;
+  background-color: green;
   position: relative;
 }
 body main #s1 #hello {
@@ -70,21 +65,22 @@ body main #s1 #hello {
     padding: 15%;
   }
 }
-body main #s1 #hand {
+body main #s1 #hello #hand {
   position: absolute;
   max-width: 33%;
-  top: -1vw;
   left: 30vw;
   z-index: -1;
-  background: url(../images/hand-appear.png) no-repeat fixed center center;
-  background-size: cover;
+  background-image: url(../images/hand-appear.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 9;
 }
 @media (min-width: 300px) and (max-width: 640px) {
-  body main #s1 #hand {
+  body main #s1 #hello #hand {
     max-width: 75%;
     top: 10vw;
     left: 10vw;
-    background-position-y: -150px;
   }
 }
 body main #s1 #s1-space {
@@ -195,19 +191,22 @@ body main #s3 {
 body main #s3 #open-quote, body main #s3 #close-quote {
   max-width: 50px;
   font-family: "Fredericka the Great", sans-serif;
-  -webkit-filter: invert(1);
   filter: invert(1);
 }
 @media (min-width: 300px) and (max-width: 640px) {
   body main #s3 #open-quote, body main #s3 #close-quote {
     max-width: 25px;
-    position: sticky;
   }
 }
 body main #s3 #close-quote {
   position: absolute;
   right: 5vw;
   bottom: 2vw;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s3 #close-quote {
+    bottom: 15vw;
+  }
 }
 body main #s3 #story {
   padding-top: 0;
@@ -235,6 +234,11 @@ body main #s3 #tales {
 body main #s3 #tales .quote-story #close-quote {
   display: inline-block;
   margin-left: 85%;
+}
+@media (min-width: 300px) and (max-width: 640px) {
+  body main #s3 #tales #story span {
+    font-size: 3.5vw;
+  }
 }
 body main #s3 .bottom-border {
   display: block;
@@ -264,7 +268,6 @@ body main #s3 #podcasts {
 body main #s4 #graveyard-black {
   /* max-width: 1080px; */
   width: 100%;
-  position: sticky;
 }
 body main p, body main #s2 textarea {
   font-family: "Josefin Slab", serif;
@@ -437,13 +440,11 @@ a {
 }
 
 a, .social-media img {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 a:hover {
   font-size: 1.3em;
-  -webkit-transform: scale(1.3);
   transform: scale(1.3);
   color: #D9043D;
 }/*# sourceMappingURL=main.css.map */
