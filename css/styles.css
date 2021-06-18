@@ -28,6 +28,15 @@
   width: 80%;
   margin: auto;
 }
+@media (min-width: 1000px) {
+  .sections p {
+    font-size: 1.85rem;
+    line-height: 1.5;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    padding: 7.5% 10% 2.5% 10%;
+  }
+}
 .sections .bottom-border {
   width: 100%;
   display: block;
@@ -45,7 +54,7 @@ body header {
   width: 100%;
 }
 body header #title-bg {
-  width: 100vw;
+  width: 100%;
   display: block;
   position: relative;
 }
@@ -69,7 +78,7 @@ body header .subtitle {
     position: absolute;
     top: 25vw;
     left: 45vw;
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 body header nav {
@@ -91,6 +100,11 @@ body main #s1 #greeting #hello {
   transform: translate(-50%, -50%);
   line-height: 0.9;
 }
+@media (min-width: 1000px) {
+  body main #s1 #greeting #hello {
+    font-size: 3rem;
+  }
+}
 body main #s1 #greeting #hand {
   max-width: 75%;
   background-image: url(../images/hand-appear-test.png);
@@ -98,9 +112,6 @@ body main #s1 #greeting #hand {
   background-position-y: -50px;
 }
 @media (min-width: 1000px) {
-  body main #s1 #greeting #hello {
-    font-size: 3rem;
-  }
   body main #s1 #greeting #hand {
     max-width: 45%;
     background-position-y: -500px;
@@ -108,7 +119,10 @@ body main #s1 #greeting #hand {
     background-size: cover;
     background-position: center;
   }
+}
+@media (min-width: 1000px) {
   body main #s1 #greeting #s1-space {
+    max-width: 60%;
     text-align: start;
     padding: 7.5% 10% 2.5% 10%;
   }
@@ -193,6 +207,7 @@ body main #s3 #tales {
 @media (min-width: 1000px) {
   body main #s3 #tales {
     width: 80%;
+    max-width: 1440px;
     margin: 5% auto;
   }
 }
@@ -205,6 +220,13 @@ body main #s3 #tales #anecdote #open-quote {
 body main #s3 #tales #anecdote #story {
   font-size: 1.25rem;
 }
+@media (min-width: 1000px) {
+  body main #s3 #tales #anecdote #story {
+    font-size: 1.85rem;
+    text-align: left;
+    padding: 0;
+  }
+}
 body main #s3 #tales #anecdote #close-quote {
   display: block;
   right: 0;
@@ -215,7 +237,8 @@ body main #s3 #tales #anecdote #signature {
 }
 @media (min-width: 1000px) {
   body main #s3 #tales #anecdote #signature {
-    font-size: 1rem;
+    text-align: right;
+    font-size: 1.5rem;
   }
 }
 body main #s3 #tree-charcoal {
@@ -251,6 +274,7 @@ body main #s4 h2 {
 }
 @media (min-width: 1000px) {
   body main #s4 h2 {
+    font-size: 2rem;
     padding-top: 10%;
   }
 }
@@ -264,7 +288,7 @@ body main #s4 textarea {
   body main #s4 textarea {
     height: 20vw;
     width: 50vw;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
 body footer {
@@ -283,7 +307,7 @@ body footer {
     height: auto;
     padding: 5% 5% 0 5%;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 60% 40% 15px;
+    grid-template-rows: 50% 50% 25px;
     grid-template-areas: ".     .     income income" "edit  tweet social social" "legal legal legal  legal";
   }
 }
@@ -311,6 +335,7 @@ body footer #legal {
   body footer #legal h3 {
     font-size: 11px;
     text-align: center;
+    display: none;
   }
 }
 @media (min-width: 1000px) {
@@ -361,6 +386,12 @@ body footer #social-media a {
 }
 body footer #social-media a img {
   width: 40px;
+}
+@media (min-width: 1000px) {
+  body footer #social-media a img {
+    width: 50px;
+    padding-bottom: 5%;
+  }
 }
 body footer #patreon {
   position: relative;
@@ -491,15 +522,6 @@ a:hover {
 /*Paypal*/
 p {
   font-family: "Josefin Slab", serif;
-}
-@media (min-width: 1000px) {
-  p {
-    font-size: 1.85rem;
-    line-height: 1.5;
-    letter-spacing: 0.15rem;
-    font-weight: 600;
-    padding: 7.5% 10% 2.5% 10%;
-  }
 }
 
 em {

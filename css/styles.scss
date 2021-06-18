@@ -21,6 +21,9 @@ $colors: (
 @mixin desktop {
     @media (min-width: 1000px) {@content;}
 }
+@mixin desktop-wide {
+    @media (min-width: 1440px) {@content;}
+}
 
  *{
     margin: 0;
@@ -47,7 +50,13 @@ $colors: (
         line-height: 1.25;
         width: 80%;
         margin: auto;
-
+        @include desktop{
+            font-size: 1.85rem;
+            line-height: 1.5;
+            letter-spacing: .15rem;
+            font-weight: 600;
+            padding: 7.5% 10% 2.5% 10%;
+        } 
     }
     .bottom-border{
         width: 100%;
@@ -69,7 +78,7 @@ $colors: (
     header{
         width: 100%;
         #title-bg{
-            width: 100vw;
+            width: 100%;
             display: block;
             position: relative;
         }
@@ -91,7 +100,7 @@ $colors: (
                 position: absolute;
                 top: 25vw;
                 left: 45vw;
-                font-size: 1.75rem;
+                font-size: 2rem;
             }
         }
          nav{display: none;}
@@ -113,32 +122,30 @@ $colors: (
                      left: 50%;
                      transform: translate(-50%, -50%);
                      line-height: 0.9;
-                    //  position: absolute;
+                     @include desktop{
+                        font-size: 3rem;
+                     }
                     }
                  #hand{
                     max-width: 75%;
                     background-image: url(../images/hand-appear-test.png);
                     background-attachment: fixed;
                     background-position-y: -50px;
-
-                    // position: absolute;
-                    }
-                @include desktop{
-                    #hello{
-                        font-size: 3rem;
-                    }
-                    #hand{
+                    @include desktop{
                         max-width: 45%;
                         background-position-y: -500px;
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
                     }
-                    #s1-space{
+                }
+                 #s1-space{
+                    @include desktop{
+                        max-width: 60%;
                         text-align:start;
                         padding: 7.5% 10% 2.5% 10%;
                     }
-                }
+                 }
              }
              .about-us{
                 @include desktop{
@@ -229,17 +236,21 @@ $colors: (
                  border-radius: 35px;
                  @include desktop{
                      width: 80%;
+                     max-width: 1440px;
                      margin: 5% auto;
                  }
                  #tales-title{ 
-                    //  padding-top: 10%;
                      line-height: 15vw;
                     }
                  #anecdote{
                      #open-quote{float:left;}
                      #story{
                          font-size: 1.25rem;
-                        //  padding: 5%;
+                         @include desktop{
+                            font-size: 1.85rem;
+                            text-align: left;
+                            padding: 0;
+                         }
                      }
                      #close-quote{
                          display: block;
@@ -249,7 +260,8 @@ $colors: (
                         font-family: "Homemade Apple", serif;
                         font-size: .75rem;
                         @include desktop{
-                            font-size: 1rem;
+                            text-align: right;
+                            font-size: 1.5rem;
                         }
                     }
                     //  .quote{
@@ -298,6 +310,7 @@ $colors: (
              h2{
                  font-size: 1.5rem;
                  @include desktop{
+                    font-size: 2rem;
                     padding-top: 10%;
                 }
                 }
@@ -309,7 +322,7 @@ $colors: (
                  @include desktop{
                      height: 20vw;
                      width: 50vw;
-                     font-size: 1.1rem;
+                     font-size: 1.5rem;
                  }
              }
              #graveyard-black{}
@@ -335,7 +348,7 @@ $colors: (
              height: auto;
              padding: 5% 5% 0 5%;
              grid-template-columns: 25% 25% 25% 25%;
-             grid-template-rows: 60% 40% 15px;
+             grid-template-rows: 50% 50% 25px;
              grid-template-areas:
              ".     .     income income"
              "edit  tweet social social"
@@ -364,6 +377,7 @@ $colors: (
                 @include desktop{
                     font-size: 11px;
                     text-align: center;
+                    display: none;
                 }
             }
             h2{
@@ -405,14 +419,16 @@ $colors: (
             justify-content: space-between;
             padding: 0;
             @include desktop{
-                // position: absolute;
                 justify-content: space-evenly;
-                // padding-top: 8%;
             }
             a{
                 background: none;
                 img{
                     width: 40px;
+                    @include desktop{
+                        width: 50px;
+                        padding-bottom: 5%;
+                    }
                 }
             }
         }
@@ -453,7 +469,7 @@ $colors: (
                 }
             @include desktop{
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content:space-evenly;
                 // padding-top: 25%;
             }
 
@@ -548,13 +564,7 @@ $colors: (
 }/*Paypal*/
   p{
     font-family: "Josefin Slab", serif;
-    @include desktop{
-        font-size: 1.85rem;
-        line-height: 1.5;
-        letter-spacing: .15rem;
-        font-weight: 600;
-        padding: 7.5% 10% 2.5% 10%;
-    }  
+ 
   }
   em {
     font-style: italic;
