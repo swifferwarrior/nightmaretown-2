@@ -448,13 +448,13 @@ $colors: (
             grid-area:income;
             display: flex;
             flex-direction: column;
+            .monetize{
+                padding-bottom: 5%;
+                }
             @include desktop{
                 flex-direction: row;
                 justify-content: space-evenly;
                 // padding-top: 25%;
-            .monetize{
-                padding-bottom: 5%;
-                }
             }
 
         }

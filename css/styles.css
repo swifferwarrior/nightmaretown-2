@@ -395,13 +395,13 @@ body footer #income {
   display: flex;
   flex-direction: column;
 }
+body footer #income .monetize {
+  padding-bottom: 5%;
+}
 @media (min-width: 1000px) {
   body footer #income {
     flex-direction: row;
     justify-content: space-evenly;
-  }
-  body footer #income .monetize {
-    padding-bottom: 5%;
   }
 }
 body footer #tweet {
