@@ -1,0 +1,51 @@
+header {
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    color: white;
+    /* width: 100%; */
+    background-image: url("../images/geocities-banner.gif");
+}
+
+a, p, span {
+    color: white;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+h1{
+    font-family: "Papyrus";
+}
+
+h2{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+a:visited {
+    color: white;
+}
+
+body {
+    background-color: #000;
+    /* background-image: url('http://astrobob.areavoices.com/files/2011/09/Twinkling-stars.gif'); */
+}
+
+main {
+    margin: 50px;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+}
+
+.spike {
+    float: right;
+}
+.skeletons{
+    /* display: inline; */
+    /* position: relative; */
+    margin: 0 125px;
+}
