@@ -223,6 +223,7 @@ body{
             }
         #s3{
             position: relative;
+            padding-top: 50px;
             background-color: color(s3);
             #open-quote, #close-quote{
                 max-width: 50px;
@@ -350,7 +351,7 @@ body{
 
     footer{
         background-color: black;
-        display: block;
+        display: flex;
         position: relative;
         width: 100%;
         @include phone{
@@ -359,7 +360,7 @@ body{
 
         }
         .edit-by{
-            display: flex;
+            // display: flex;
             flex-direction: row;
             align-content: space-between;
             background: none;
