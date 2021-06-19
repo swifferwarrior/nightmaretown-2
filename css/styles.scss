@@ -3,7 +3,7 @@ $colors: (
     s1: #D9043D,
     s2: #3c1642,
     s3: #1e0a1e,
-    charcoal: #0D0D0D,
+    charcoal:             #0D0D0D,
     charcoal-transparent: rgba(13, 13, 13, 0.66)
 );
 
@@ -153,7 +153,6 @@ $colors: (
                     margin: auto;
                 }
                  .manda{
-                     h2{}
                      .about-her{
                          #manda-img{
                              @include desktop{
@@ -178,9 +177,6 @@ $colors: (
                      }
                  }
              }
-             #purple-bottom{
-                 img{}
-             }
          }
          #s2{
              background-color: color(s2);
@@ -190,7 +186,6 @@ $colors: (
                          width: 60%;
                          margin: auto;
                      }
-                     h2{}
                      #about-betty{
                          @include desktop{
                              grid-template-columns: 1fr 1fr 250px;
@@ -225,7 +220,6 @@ $colors: (
                      }
                  }
              }
-             #s2-bottom{}
          }
          #s3{
              background-color: color(s3);
@@ -325,7 +319,6 @@ $colors: (
                      font-size: 1.5rem;
                  }
              }
-             #graveyard-black{}
          }
      }
 
