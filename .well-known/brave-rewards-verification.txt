@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nightmaretownpodcast.com
+Token: fa06afbd1a0886c25a2404f59587422ec041809a3e5a474039d05ac426e384cd

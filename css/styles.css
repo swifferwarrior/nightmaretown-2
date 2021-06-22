@@ -111,6 +111,12 @@ body main #s1 #greeting #hand {
   background-attachment: fixed;
   background-position-y: -50px;
 }
+@media (min-width: 450px) {
+  body main #s1 #greeting #hand {
+    max-width: 60%;
+    background-size: contain;
+  }
+}
 @media (min-width: 640px) and (max-width: 1000px) {
   body main #s1 #greeting #hand {
     max-width: 50%;
@@ -328,6 +334,11 @@ body footer figure h3 {
 }
 body footer figure a {
   font-size: 0.7rem;
+}
+@media (min-width: 450px) {
+  body footer figure a {
+    font-size: 0.9rem;
+  }
 }
 body footer #legal {
   grid-area: legal;
