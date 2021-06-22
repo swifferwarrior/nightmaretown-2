@@ -111,6 +111,12 @@ body main #s1 #greeting #hand {
   background-attachment: fixed;
   background-position-y: -50px;
 }
+@media (min-width: 640px) and (max-width: 1000px) {
+  body main #s1 #greeting #hand {
+    max-width: 50%;
+    background-size: contain;
+  }
+}
 @media (min-width: 1000px) {
   body main #s1 #greeting #hand {
     max-width: 45%;
@@ -293,11 +299,14 @@ body main #s4 textarea {
 }
 body footer {
   background-color: black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 10% 7.5% 5% 7.5%;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  column-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   grid-template-rows: 125px 50px 25px;
   grid-template-areas: "legal income" "social social" ". edit";
 }
