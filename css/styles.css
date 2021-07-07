@@ -305,14 +305,11 @@ body main #s4 textarea {
 }
 body footer {
   background-color: black;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 10% 7.5% 5% 7.5%;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
   grid-template-rows: 125px 50px 25px;
   grid-template-areas: "legal income" "social social" ". edit";
 }
@@ -426,14 +423,13 @@ body footer #patreon {
 body footer #merch {
   position: relative;
 }
-body footer #merch button {
+body footer #merch input {
   font-family: sans-serif;
   color: antiquewhite;
   background-color: #FFBD5D;
-  text-transform: uppercase;
-  padding: 0.0625rem 0.5rem;
-  border-radius: 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.0625rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
   font-family: "PayPal Sans Big";
   font-weight: 500;
   line-height: 0.9375rem;
@@ -441,12 +437,15 @@ body footer #merch button {
   display: inline-block;
   height: 35px;
   width: 11rem;
+  text-align: end;
+  background-image: url(https://teespring.com/compiled_assets/shared/favicon-9ce09461d59957f2d0c9813e6b0b242b987f2d257779d33a1e02a9ec4077d143.ico);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-origin: content-box;
+  background-size: 1.7rem;
 }
-body footer #merch button img {
-  height: 1rem;
-  float: left;
-  padding-left: 10px;
-  vertical-align: middle;
+body footer #merch input:hover {
+  cursor: pointer;
 }
 body footer #income {
   grid-area: income;
